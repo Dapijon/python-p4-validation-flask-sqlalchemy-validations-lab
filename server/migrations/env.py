@@ -21,7 +21,7 @@ logger = logging.getLogger('alembic.env')
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
 config.set_main_option(
-    'sqlalchemy.url',
+    'sqlalchemy.url',p
     str(current_app.extensions['migrate'].db.get_engine().url).replace(
         '%', '%%'))
 target_metadata = current_app.extensions['migrate'].db.metadata
